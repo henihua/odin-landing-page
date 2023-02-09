@@ -7,10 +7,7 @@ body {
     min-width: 100vh;
     
 }
-
-.hero, .info, .quote-section, .recruit-section {
-    padding-left: 20vh;
-    padding-right: 20vh;
+.hero, .info, .quote-section, .recruit-section, footer {
     width: 100%;
     min-width: 70vh;
 }
@@ -19,8 +16,7 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    /*padding: 0vh 25vh;*/
-    
+    padding: 0vh 20vh 5vh 20vh;
 }
 header {
     display: flex;
@@ -63,8 +59,7 @@ a:hover {
 }
 
 .img > img{
-    /*max-width: 100%;*/
-    /*min-width: 50%;*/
+    max-width: 100%;
     align-self: center;
 }
 
@@ -72,7 +67,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 1;
     gap: 10%;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -109,18 +103,37 @@ h1 {
 .info {
     display: flex;
     flex-direction: column;
-    padding-left: 20vh;
-    padding-right: 20vh;
-    padding: 1vh 20vh 8vh 20vh;
-    width: 100%;
-    min-width: 70vh;
+    padding: 0vh 20vh 12vh 20vh;
     justify-content: center;
     align-items: center;
 }
 
 .cards {
     display: flex;
-    gap: 10vh;
+    flex-wrap: wrap;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    height: 50%;
+    width: 50%;
 }
 
 h2 {
@@ -134,16 +147,17 @@ h2 {
     text-align: center;
     color: #1F2937;
     font-size: 18px;
+    width: 240px;
 }
 
 .quote-section {
     background-color: #E5E7EB;
-    min-width: 70vh;
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 25vh 1vh 25vh
+    padding: 10vh 20vh 5vh 20vh;
+    
 }
 
 .quote {
@@ -159,12 +173,11 @@ h2 {
 }
 
 .recruit-section {
-    min-width: 70vh;
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vh;
+    padding: 10vh 20vh;
 }
 
 .recruitbox {
@@ -175,7 +188,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 10vh;
-    padding: 2vh 10vh;
+    padding: 2vh 14vh;
 }
 
 h3 {
@@ -210,10 +223,6 @@ footer {
     background-color: #1F2937;
     color: #F9FAF8;
     font-size: 18px;
-    padding-left: 20vh;
-    padding-right: 20vh;
     padding: 4vh 20vh;
-    width: 100%;
-    min-width: 70vh;
     text-align: center;
 }
